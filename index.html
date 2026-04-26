@@ -10,7 +10,7 @@ body {
   margin:0;
   font-family:Arial;
   direction:rtl;
-  background:#f8f8f8;
+  background:#f5f5f5;
 }
 
 /* الهيدر */
@@ -44,7 +44,6 @@ h1 { font-size:32px; }
   border-radius:8px;
   color:white;
   text-decoration:none;
-  font-size:16px;
 }
 
 .call { background:#007bff; }
@@ -65,22 +64,15 @@ section {
 
 .box {
   background:white;
-  padding:20px;
-  border-radius:12px;
-  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  padding:15px;
+  border-radius:10px;
 }
 
-/* معرض الصور */
+/* المعرض */
 .gallery {
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:15px;
-}
-
-.gallery div {
-  background:white;
-  padding:10px;
-  border-radius:10px;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:10px;
 }
 
 .gallery img {
@@ -89,41 +81,25 @@ section {
   cursor:pointer;
 }
 
-.gallery p {
-  margin:5px;
-}
-
 /* تكبير الصور */
 .overlay {
   position:fixed;
-  top:0;left:0;
-  width:100%;height:100%;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
   background:rgba(0,0,0,0.8);
   display:flex;
   justify-content:center;
   align-items:center;
-  z-index:9999;
 }
 
 .overlay img {
   max-width:90%;
   max-height:90%;
-  border-radius:10px;
 }
 
-/* لماذا نحن */
-.features {
-  line-height:2;
-}
-
-/* الفوتر */
-footer {
-  background:#111;
-  color:white;
-  padding:20px;
-}
-
-/* زر واتساب ثابت */
+/* زر واتساب */
 .whatsapp-fixed {
   position:fixed;
   bottom:20px;
@@ -143,7 +119,7 @@ footer {
 <h1>تركيب بلاط وباركيه في الرياض</h1>
 <p>تنفيذ احترافي | جودة مضمونة | أسعار تنافسية</p>
 
-<a class="btn call" href="tel:+966566223639">📞 اتصال الآن</a>
+<a class="btn call" href="tel:+966566223639">📞 اتصال</a>
 <a class="btn whatsapp" href="https://wa.me/966566223639">💬 واتساب</a>
 <br>
 <a class="btn whatsapp" href="https://wa.me/79801850403">🇷🇺 واتساب روسي</a>
@@ -153,7 +129,8 @@ footer {
 <h2>خدماتنا</h2>
 
 <div class="services">
-<div class="box">تركيب بلاط أرضيات وجدران</div>
+<div class="box">تركيب بلاط أرضيات</div>
+<div class="box">تركيب بلاط جدران</div>
 <div class="box">تركيب باركيه</div>
 <div class="box">تشطيب حمامات</div>
 <div class="box">ديكورات داخلية</div>
@@ -165,55 +142,43 @@ footer {
 
 <div class="gallery">
 
-<div>
 <img src="https://images.unsplash.com/photo-1582582494700-4a9b1a1c6f91">
-<p>تركيب بلاط أرضيات</p>
-</div>
-
-<div>
 <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6">
-<p>تشطيب احترافي</p>
-</div>
-
-<div>
 <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
-<p>سابقة أعمالنا في موسكو</p>
-</div>
-  <div class="gallery">
-  <div class="gallery">
-
-<img src="images/work1.jpg">
-<img src="images/work2.jpg">
-<img src="images/tile1.jpg">
-<img src="images/parquet1.jpg">
-<img src="images/moscow.jpg">
-<img src="images/saudi1.jpg">
-
-  </div>
-    
-
-</div>
-<div>
 <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498a">
-<p>تشطيب منزل عائلة سعودية</p>
-</div>
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
+<img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb">
+<img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
+<img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688">
+<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267">
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+<img src="https://images.unsplash.com/photo-1600210492493-0946911123ea">
+<img src="https://images.unsplash.com/photo-1560448075-bb485b067938">
+<img src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2c04">
+<img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf">
+<img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9">
+<img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
 
 </div>
+
 </section>
 
 <section>
 <h2>لماذا نحن؟</h2>
-<div class="features">
+<p>
 ✔ خبرة طويلة<br>
-✔ تنفيذ دقيق<br>
+✔ تنفيذ احترافي<br>
 ✔ أسعار مناسبة<br>
 ✔ التزام بالمواعيد
-</div>
+</p>
 </section>
 
-<footer>
-<p>نعمل في الرياض وجميع المناطق</p>
-<p>📞 0566223639</p>
+<footer style="background:#111;color:white;padding:20px;text-align:center;">
+📞 0566223639 - الرياض
 </footer>
 
 <a class="whatsapp-fixed" href="https://wa.me/966566223639">💬</a>
