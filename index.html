@@ -9,40 +9,79 @@
 body {
     font-family: Arial;
     direction: rtl;
-    text-align: center;
-    background: #f5f5f5;
     margin: 0;
+    background: #f5f5f5;
 }
 
 header {
-    background: #222;
-    color: white;
-    padding: 25px;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
 }
 
 section {
     padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
 }
 
 .btn {
     display: inline-block;
     margin: 10px;
-    padding: 12px 20px;
+    padding: 14px 25px;
     background: #28a745;
     color: white;
     text-decoration: none;
     border-radius: 6px;
+    font-size: 18px;
 }
 
 .whatsapp {
     background: #25D366;
 }
 
-img {
-    width: 90%;
-    max-width: 400px;
+.services, .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    background: white;
     margin: 10px;
+    padding: 15px;
     border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* زر واتساب ثابت */
+.fixed-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
 }
 </style>
 </head>
@@ -50,33 +89,62 @@ img {
 <body>
 
 <header>
-<h1>تركيب بلاط وباركيه</h1>
-<p>جودة عالية | أسعار ممتازة | تنفيذ سريع</p>
+<h1>تركيب بلاط وباركيه في الرياض</h1>
+<p>تنفيذ سريع | جودة مضمونة | أسعار تنافسية</p>
+
+<a class="btn" href="tel:+966566223639">📞 اتصال الآن</a>
+<a class="btn whatsapp" href="https://wa.me/966566223639">💬 واتساب</a>
 </header>
 
 <section>
 <h2>خدماتنا</h2>
-<p>
-تركيب بلاط أرضيات وجدران<br>
-تركيب باركيه حديث<br>
-تشطيب ديكورات داخلية
-</p>
 
-<a class="btn" href="tel:+966566223639">📞 اتصال الآن</a>
-<a class="btn whatsapp" href="https://wa.me/966566223639">💬 واتساب</a>
-<a class="btn whatsapp" href="https://wa.me/79801850403">💬 واتساب روسيا</a>
+<div class="services">
+<div class="box">تركيب بلاط أرضيات</div>
+<div class="box">تركيب بلاط جدران</div>
+<div class="box">تركيب باركيه</div>
+<div class="box">ديكورات داخلية</div>
+</div>
+
+</section>
+
+<section>
+<h2>لماذا نحن؟</h2>
+<p>
+✔ خبرة طويلة في المجال<br>
+✔ دقة في التنفيذ<br>
+✔ التزام بالمواعيد<br>
+✔ أسعار مناسبة
+</p>
 </section>
 
 <section>
 <h2>أعمالنا</h2>
-<img src="https://via.placeholder.com/400x300">
-<img src="https://via.placeholder.com/400x300">
-<img src="https://via.placeholder.com/400x300">
+
+<div class="gallery">
+<img src="https://via.placeholder.com/300x200">
+<img src="https://via.placeholder.com/300x200">
+<img src="https://via.placeholder.com/300x200">
+<img src="https://via.placeholder.com/300x200">
+</div>
+
+</section>
+
+<section>
+<h2>آراء العملاء</h2>
+<p>
+"شغل ممتاز وسريع جداً" ⭐⭐⭐⭐⭐<br>
+"أفضل فني بلاط تعاملت معه" ⭐⭐⭐⭐⭐
+</p>
 </section>
 
 <footer>
 <p>نعمل في الرياض وجميع المناطق</p>
+<p>📞 0566223639</p>
 </footer>
+
+<!-- زر واتساب ثابت -->
+<a class="fixed-whatsapp" href="https://wa.me/966566223639">💬</a>
 
 </body>
 </html>
