@@ -7,9 +7,22 @@
 
 <style>
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
 }
 
 .gallery img {
@@ -143,7 +156,6 @@ footer {
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/2_20260420_132559_%D9%A0%D9%A0%D9%A0%D9%A1.png">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/4d3c0f75-59d1-4a71-93c9-f2c05db1e1a5.png">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/6de0705f-b6f9-4e64-b85b-5ca2b97b0b0a.png">
-<div
 
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2001_10_42%20AM.png">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2001_27_27%20AM.png">
