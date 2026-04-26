@@ -10,12 +10,12 @@ body {
   margin:0;
   font-family:Arial;
   direction:rtl;
-  background:#fff;
+  background:#f8f8f8;
 }
 
 /* الهيدر */
 header {
-  background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover no-repeat;
+  background:url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover no-repeat;
   color:white;
   padding:100px 20px;
   text-align:center;
@@ -36,6 +36,7 @@ header * { position:relative; }
 
 h1 { font-size:32px; }
 
+/* أزرار */
 .btn {
   display:inline-block;
   margin:10px;
@@ -43,34 +44,95 @@ h1 { font-size:32px; }
   border-radius:8px;
   color:white;
   text-decoration:none;
+  font-size:16px;
 }
 
 .call { background:#007bff; }
 .whatsapp { background:#25d366; }
 
-/* خدمات */
+/* الأقسام */
 section {
-  padding:30px;
+  padding:40px 20px;
   text-align:center;
 }
 
+/* الخدمات */
 .services {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  gap:10px;
+  gap:15px;
 }
 
 .box {
-  background:#f5f5f5;
-  padding:15px;
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* معرض الصور */
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+
+.gallery div {
+  background:white;
+  padding:10px;
   border-radius:10px;
 }
 
-/* الصور */
 .gallery img {
   width:100%;
-  margin:10px 0;
   border-radius:10px;
+  cursor:pointer;
+}
+
+.gallery p {
+  margin:5px;
+}
+
+/* تكبير الصور */
+.overlay {
+  position:fixed;
+  top:0;left:0;
+  width:100%;height:100%;
+  background:rgba(0,0,0,0.8);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.overlay img {
+  max-width:90%;
+  max-height:90%;
+  border-radius:10px;
+}
+
+/* لماذا نحن */
+.features {
+  line-height:2;
+}
+
+/* الفوتر */
+footer {
+  background:#111;
+  color:white;
+  padding:20px;
+}
+
+/* زر واتساب ثابت */
+.whatsapp-fixed {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
 }
 </style>
 </head>
@@ -81,17 +143,19 @@ section {
 <h1>تركيب بلاط وباركيه في الرياض</h1>
 <p>تنفيذ احترافي | جودة مضمونة | أسعار تنافسية</p>
 
-<a class="btn call" href="tel:+966566223639">اتصال الآن</a>
-<a class="btn whatsapp" href="https://wa.me/966566223639">واتساب</a>
+<a class="btn call" href="tel:+966566223639">📞 اتصال الآن</a>
+<a class="btn whatsapp" href="https://wa.me/966566223639">💬 واتساب</a>
+<br>
+<a class="btn whatsapp" href="https://wa.me/79801850403">🇷🇺 واتساب روسي</a>
 </header>
 
 <section>
 <h2>خدماتنا</h2>
 
 <div class="services">
-<div class="box">تركيب بلاط أرضيات</div>
-<div class="box">تركيب بلاط جدران</div>
+<div class="box">تركيب بلاط أرضيات وجدران</div>
 <div class="box">تركيب باركيه</div>
+<div class="box">تشطيب حمامات</div>
 <div class="box">ديكورات داخلية</div>
 </div>
 </section>
@@ -99,7 +163,61 @@ section {
 <section>
 <h2>أعمالنا</h2>
 
+<div class="gallery">
 
+<div>
+<img src="https://images.unsplash.com/photo-1582582494700-4a9b1a1c6f91">
+<p>تركيب بلاط أرضيات</p>
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6">
+<p>تشطيب احترافي</p>
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+<p>سابقة أعمالنا في موسكو</p>
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1600607687644-c7171b42498a">
+<p>تشطيب منزل عائلة سعودية</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>لماذا نحن؟</h2>
+<div class="features">
+✔ خبرة طويلة<br>
+✔ تنفيذ دقيق<br>
+✔ أسعار مناسبة<br>
+✔ التزام بالمواعيد
+</div>
+</section>
+
+<footer>
+<p>نعمل في الرياض وجميع المناطق</p>
+<p>📞 0566223639</p>
+</footer>
+
+<a class="whatsapp-fixed" href="https://wa.me/966566223639">💬</a>
+
+<script>
+document.querySelectorAll(".gallery img").forEach(img=>{
+img.onclick=function(){
+let overlay=document.createElement("div");
+overlay.className="overlay";
+let big=document.createElement("img");
+big.src=this.src;
+overlay.appendChild(big);
+document.body.appendChild(overlay);
+overlay.onclick=()=>overlay.remove();
+}
+});
+</script>
 
 </body>
 </html>
