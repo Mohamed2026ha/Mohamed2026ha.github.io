@@ -3,112 +3,133 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تركيب بلاط وباركيه في الرياض</title>
+<title>مقاولات وتشطيب في الرياض</title>
 
 <style>
-body {
-  margin:0;
-  font-family:Arial;
-  direction:rtl;
-  background:#f5f5f5;
+body{
+margin:0;
+font-family:Tajawal,Arial;
+direction:rtl;
+background:#f5f5f5;
 }
 
 /* الهيدر */
-header {
-  background:url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover no-repeat;
-  color:white;
-  padding:100px 20px;
-  text-align:center;
-  position:relative;
+header{
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover;
+color:white;
+text-align:center;
+padding:120px 20px;
 }
 
-header::before {
-  content:"";
-  position:absolute;
-  width:100%;
-  height:100%;
-  top:0;
-  left:0;
-  background:rgba(0,0,0,0.6);
+header h1{
+font-size:38px;
+margin-bottom:10px;
 }
 
-header * { position:relative; }
-
-h1 { font-size:32px; }
-
-/* أزرار */
-.btn {
-  display:inline-block;
-  margin:10px;
-  padding:12px 20px;
-  border-radius:8px;
-  color:white;
-  text-decoration:none;
+header p{
+font-size:18px;
+margin-bottom:20px;
 }
 
-.call { background:#007bff; }
-.whatsapp { background:#25d366; }
-
-/* الأقسام */
-section {
-  padding:40px 20px;
-  text-align:center;
+.btn{
+display:inline-block;
+padding:12px 22px;
+margin:5px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+font-size:15px;
 }
+
+.call{background:#007bff;}
+.whatsapp{background:#25d366;}
 
 /* الخدمات */
-.services {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  gap:15px;
+section{
+padding:50px 20px;
+text-align:center;
 }
 
-.box {
-  background:white;
-  padding:15px;
-  border-radius:10px;
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
 }
 
-/* المعرض */
-.gallery {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  gap:10px;
+.box{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
 }
 
-.gallery img {
-  width:100%;
-  border-radius:10px;
-  cursor:pointer;
+.box:hover{
+transform:translateY(-5px);
 }
 
-/* تكبير الصور */
-.overlay {
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.8);
-  display:flex;
-  justify-content:center;
-  align-items:center;
+/* معرض */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
 }
 
-.overlay img {
-  max-width:90%;
-  max-height:90%;
+.gallery img{
+width:100%;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* تكبير */
+.overlay{
+position:fixed;
+top:0;left:0;
+width:100%;height:100%;
+background:rgba(0,0,0,0.9);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.overlay img{
+max-width:90%;
+max-height:90%;
+}
+
+/* قسم مميز */
+.highlight{
+background:#111;
+color:white;
+padding:40px 20px;
+}
+
+/* فوتر */
+footer{
+background:#000;
+color:white;
+text-align:center;
+padding:20px;
 }
 
 /* زر واتساب */
-.whatsapp-fixed {
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25d366;
-  color:white;
-  padding:15px;
-  border-radius:50%;
-  text-decoration:none;
+.whatsapp-fixed{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+text-decoration:none;
 }
 </style>
 </head>
@@ -116,160 +137,71 @@ section {
 <body>
 
 <header>
-<h1>تركيب بلاط وباركيه في الرياض</h1>
-<p>تنفيذ احترافي | جودة مضمونة | أسعار تنافسية</p>
+<h1>أفضل خدمات المقاولات والتشطيب في الرياض</h1>
+<p>بلاط - بورسلين - باركيه - دهانات - ترميم - ديكور</p>
 
-<a class="btn call" href="tel:+966566223639">📞 اتصال</a>
+<a class="btn call" href="tel:+966566223639">📞 اتصال الآن</a>
 <a class="btn whatsapp" href="https://wa.me/966566223639">💬 واتساب</a>
 <br>
 <a class="btn whatsapp" href="https://wa.me/79801850403">🇷🇺 واتساب روسي</a>
 </header>
-<section style="background:#fff;padding:30px;text-align:center">
 
-<h2>أفضل خدمات تركيب البلاط والباركيه في الرياض</h2>
-
-<p style="max-width:600px;margin:auto;line-height:1.8">
-نقدم خدمات تركيب البلاط والباركيه بأعلى جودة وتشطيب احترافي.
-نضمن لك الدقة في التنفيذ، سرعة الإنجاز، وأسعار تنافسية تناسب الجميع.
-</p>
-
-<br>
-
-<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px">
-
-<div style="background:#f5f5f5;padding:15px;border-radius:10px;width:200px">
-✔ تركيب بلاط أرضيات وجدران
-</div>
-
-<div style="background:#f5f5f5;padding:15px;border-radius:10px;width:200px">
-✔ تركيب باركيه احترافي
-</div>
-
-<div style="background:#f5f5f5;padding:15px;border-radius:10px;width:200px">
-✔ تشطيب حمامات ومطابخ
-</div>
-
-<div style="background:#f5f5f5;padding:15px;border-radius:10px;width:200px">
-✔ ديكورات داخلية حديثة
-</div>
-
-</div>
-
-<br>
-
-<a href="tel:+966566223639" style="display:inline-block;background:#007bff;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;margin:5px">
-📞 اتصال الآن
-</a>
-
-<a href="https://wa.me/966566223639" style="display:inline-block;background:#25d366;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;margin:5px">
-💬 واتساب
-</a>
-
-<a href="https://wa.me/79801850403" style="display:inline-block;background:#25d366;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;margin:5px">
-🇷🇺 واتساب روسي
-</a>
-
-</section>
 <section>
-  <section style="background:#fff;padding:30px;text-align:center">
-
-<h2>أفضل خدمات تركيب البلاط والباركيه في الرياض</h2>
-
-<p style="max-width:600px;margin:auto;line-height:1.8">
-نقدم خدمات تركيب البلاط والباركيه بأعلى جودة وتشطيب احترافي.
-نضمن لك الدقة في التنفيذ، سرعة الإنجاز، وأسعار تنافسية تناسب الجميع.
-</p>
-
-<br>
-
-<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px">
-
-<div style="background:#f5f5f5;padding:15px;border-radius:10px;width:200px">
-✔ تركيب بلاط أرضيات وجدران
-</div>
-
-<div style="background:#f5f5f5;padding:15px;border-radius:10px;width:200px">
-✔ تركيب باركيه احترافي
-</div>
-
-<div style="background:#f5f5f5;padding:15px;border-radius:10px;width:200px">
-✔ تشطيب حمامات ومطابخ
-</div>
-
-<div style="background:#f5f5f5;padding:15px;border-radius:10px;width:200px">
-✔ ديكورات داخلية حديثة
-</div>
-
-</div>
-
-<br>
-
-<a href="tel:+966566223639" style="display:inline-block;background:#007bff;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;margin:5px">
-📞 اتصال الآن
-</a>
-
-<a href="https://wa.me/966566223639" style="display:inline-block;background:#25d366;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;margin:5px">
-💬 واتساب
-</a>
-
-<a href="https://wa.me/79801850403" style="display:inline-block;background:#25d366;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;margin:5px">
-🇷🇺 واتساب روسي
-</a>
-
-</section>
 <h2>خدماتنا</h2>
-
 <div class="services">
-<div class="box">تركيب بلاط أرضيات</div>
-<div class="box">تركيب بلاط جدران</div>
+<div class="box">تركيب بلاط احترافي</div>
+<div class="box">تركيب بورسلين</div>
 <div class="box">تركيب باركيه</div>
-<div class="box">تشطيب حمامات</div>
-<div class="box">ديكورات داخلية</div>
+<div class="box">دهانات حديثة</div>
+<div class="box">ترميم وصيانة</div>
+<div class="box">ديكور داخلي</div>
 </div>
 </section>
 
 <section>
-<h2>أعمالنا</h2>
+<h2>معرض الأعمال</h2>
 
 <div class="gallery">
 
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/4d3c0f75-59d1-4a71-93c9-f2c05db1e1a5.png
-<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6">
-<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
-<img src="https://images.unsplash.com/photo-1600607687644-c7171b42498a">
-<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
-<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
-<img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb">
-<img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
-<img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688">
-<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267">
-<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
-<img src="https://images.unsplash.com/photo-1600210492493-0946911123ea">
-<img src="https://images.unsplash.com/photo-1560448075-bb485b067938">
-<img src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2c04">
-<img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf">
-<img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9">
-<img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
-<img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
-<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+<!-- ضع روابط صورك هنا -->
+<img src=https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/4d3c0f75-59d1-4a71-93c9-f2c05db1e1a5.png>
+<img src="رابط2">
+<img src="رابط3">
+<img src="رابط4">
+<img src="رابط5">
+<img src="رابط6">
+<img src="رابط7">
+<img src="رابط8">
+<img src="رابط9">
+<img src="رابط10">
+
+<img src="رابط11">
+<img src="رابط12">
+<img src="رابط13">
+<img src="رابط14">
+<img src="رابط15">
+<img src="رابط16">
+<img src="رابط17">
+<img src="رابط18">
+<img src="رابط19">
+<img src="رابط20">
 
 </div>
 
 </section>
 
-<section>
+<section class="highlight">
 <h2>لماذا نحن؟</h2>
 <p>
-✔ خبرة طويلة<br>
-✔ تنفيذ احترافي<br>
-✔ أسعار مناسبة<br>
-✔ التزام بالمواعيد
+✔ خبرة كبيرة في المقاولات<br>
+✔ تنفيذ احترافي دقيق<br>
+✔ أسعار تنافسية<br>
+✔ الالتزام بالمواعيد
 </p>
 </section>
 
-<footer style="background:#111;color:white;padding:20px;text-align:center;">
-📞 0566223639 - الرياض
+<footer>
+📞 0566223639 - الرياض  
 </footer>
 
 <a class="whatsapp-fixed" href="https://wa.me/966566223639">💬</a>
