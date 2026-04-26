@@ -6,265 +6,185 @@
 <title>تركيب بلاط وباركيه في الرياض</title>
 
 <style>
-    body {://images.unsplash.com/photo-1600607687644-c7171b42498a");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: #000;
-}
-    section {
-    background: #f5f5f5;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-}
-    .gallery img {
-    cursor: pointer;
+body {
+  margin:0;
+  font-family: Arial;
+  direction: rtl;
+  background:#ffffff;
 }
 
-.gallery img:hover {
-    opacity: 0.9;
-}
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-    padding: 10px;
-}
-
-.gallery img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: 0.3s;
+/* الهيدر */
+header {
+  background: url("ضع_رابط_الصورة_هنا") center/cover no-repeat;
+  color:white;
+  padding:80px 20px;
+  text-align:center;
+  position:relative;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
+header::before {
+  content:"";
+  position:absolute;
+  top:0;left:0;
+  width:100%;height:100%;
+  background:rgba(0,0,0,0.6);
 }
 
-.gallery img {
-    width: 250px;
-    margin: 10px;
-    border-radius: 10px;
-    transition: 0.3s;
+header * {
+  position:relative;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
-}
-}
-
-header, section, footer {
-    background: rgba(255,255,255,0.92);
-    margin: 15px;
-    padding: 20px;
-    border-radius: 12px;
-}
-
-section {
-    padding: 20px;
-    text-align: center;
-}
-
-h2 {
-    margin-bottom: 15px;
+h1 {
+  font-size:32px;
 }
 
 .btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 14px 25px;
-    background: #28a745;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 18px;
+  display:inline-block;
+  margin:10px;
+  padding:12px 20px;
+  background:#28a745;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
 }
 
-.whatsapp {
-    background: #25D366;
+.btn.call {
+  background:#007bff;
 }
 
-.services, .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+/* الخدمات */
+section {
+  padding:30px 15px;
+  text-align:center;
 }
 
-.box {
-    background: white;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 10px;
-    width: 280px;
-    box-shadow: 0 0 10px #ccc;
+.services .box {
+  background:#f5f5f5;
+  margin:10px;
+  padding:15px;
+  border-radius:10px;
 }
 
-img {
-    width: 100%;
-    border-radius: 10px;
+/* الصور */
+.gallery {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  gap:10px;
 }
 
+.gallery img {
+  width:100%;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+/* تكبير الصورة */
+.overlay {
+  position:fixed;
+  top:0;left:0;
+  width:100%;height:100%;
+  background:rgba(0,0,0,0.8);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.overlay img {
+  max-width:90%;
+  max-height:90%;
+  border-radius:10px;
+}
+
+/* الفوتر */
 footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background:#111;
+  color:white;
+  padding:20px;
+  text-align:center;
 }
 
 /* زر واتساب ثابت */
-.fixed-whatsapp {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 20px;
+.whatsapp-fixed {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  font-size:20px;
+  text-decoration:none;
 }
 </style>
 </head>
 
 <body>
+
+<header>
+  <h1>تركيب بلاط وباركيه في الرياض</h1>
+  <p>تنفيذ احترافي | جودة مضمونة | أسعار تنافسية</p>
+
+  <a class="btn call" href="tel:+966566223639">📞 اتصال الآن</a>
+  <a class="btn" href="https://wa.me/966566223639">💬 واتساب</a>
+  <br>
+  <a class="btn" href="https://wa.me/79801850403">🇷🇺 واتساب روسي</a>
+</header>
+
+<section>
+  <h2>خدماتنا</h2>
+  <div class="services">
+    <div class="box">تركيب بلاط أرضيات وجدران</div>
+    <div class="box">تركيب باركيه</div>
+    <div class="box">تشطيب حمامات</div>
+    <div class="box">ديكورات داخلية</div>
+  </div>
+</section>
+
+<section>
+  <h2>أعمالنا</h2>
+
+  <div class="gallery">
+    <img src="ضع_رابط_صورة1">
+    <img src="ضع_رابط_صورة2">
+    <img src="ضع_رابط_صورة3">
+    <img src="ضع_رابط_صورة4">
+  </div>
+</section>
+
+<section>
+  <h2>لماذا نحن؟</h2>
+  <p>
+  ✔ خبرة طويلة<br>
+  ✔ دقة في التنفيذ<br>
+  ✔ الالتزام بالمواعيد<br>
+  ✔ أسعار مناسبة
+  </p>
+</section>
+
+<footer>
+  <p>نعمل في الرياض وجميع المناطق</p>
+  <p>📞 0566223639</p>
+</footer>
+
+<a class="whatsapp-fixed" href="https://wa.me/966566223639">💬</a>
+
 <script>
-document.querySelectorAll('.gallery img').forEach(img => {
+document.querySelectorAll(".gallery img").forEach(img => {
   img.onclick = function() {
-    let overlay = document.createElement('div');
-    overlay.style = `
-      position:fixed;
-      top:0;left:0;
-      width:100%;height:100%;
-      background:rgba(0,0,0,0.8);
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      z-index:9999;
-    `;
-    
-    let bigImg = document.createElement('img');
+    let overlay = document.createElement("div");
+    overlay.className = "overlay";
+
+    let bigImg = document.createElement("img");
     bigImg.src = this.src;
-    bigImg.style = "max-width:90%;max-height:90%;border-radius:10px;";
-    
+
     overlay.appendChild(bigImg);
     document.body.appendChild(overlay);
-    
+
     overlay.onclick = () => overlay.remove();
   }
 });
 </script>
-<header>
-<h1>تركيب بلاط وباركيه في الرياض</h1>
-<p>تنفيذ سريع | جودة مضمونة | أسعار تنافسية</p>
 
-<a class="btn" href="tel:+966566223639">📞 اتصال الآن</a>
-<a class="btn whatsapp" href="https://wa.me/966566223639">💬 واتساب</a>
-</header>
-
-<section>
-<h2>خدماتنا</h2>
-<div class="gallery">
-
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/4d3c0f75-59d1-4a71-93c9-f2c05db1e1a5.png">
-<h3>نماذج من أعمالنا في الرياض</h3>
-<p>تركيب بلاط وباركيه بأعلى جودة وتشطيب احترافي</p>
-</div>
-<div class="services">
-<div class="box">تركيب بلاط أرضيات</div>
-<div class="box">تركيب بلاط جدران</div>
-<div class="box">تركيب باركيه</div>
-<div class="box">ديكورات داخلية</div>
-</div>
-
-</section>
-
-<section>
-<h2>لماذا نحن؟</h2>
-<p>
-✔ خبرة طويلة في المجال<br>
-✔ دقة في التنفيذ<br>
-✔ التزام بالمواعيد<br>
-✔ أسعار مناسبة
-</p>
-</section>
-
-<section>
-<h2>أعمالنا</h2>
-<div class="gallery">
-
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/4d3c0f75-59d1-4a71-93c9-f2c05db1e1a5.png">
-
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/2_20260420_132559_%D9%A0%D9%A0%D9%A0%D9%A1.png">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/4d3c0f75-59d1-4a71-93c9-f2c05db1e1a5.png">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/6de0705f-b6f9-4e64-b85b-5ca2b97b0b0a.png">
-
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2001_10_42%20AM.png">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2001_27_27%20AM.png">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2012_45_23%20AM.png">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2012_51_16%20AM.png">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2012_54_50%20AM.png">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/file_000000001a5c724682faa5e7ec914603.png">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/file_0000000062cc724383ff1317e940ca75.png">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/file_00000000f1847243bb89c767c22cba93.png">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/photo-1619652278811-37c97815c35d.jpeg">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/photo-1626200115283-4c0c73f0f4f7.jpeg">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/photo-1628602813558-8c6ad5eafe4f.jpeg">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/photo-1632207189520-f6579fc91c96.jpeg">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/photo-1636604391306-683b0250acbd.jpeg">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/photo-1648892079495-fcda44a9250b.jpeg">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/photo-1761673271363-6efe71f08d18.jpeg">
-</di
-</div
-<p>📞 اتصل الآن أو تواصل عبر واتساب للحصول على عرض سعر سريع</p>
-<
-<h2>آراء العملاء</h2>
-<p>
-"شغل ممتاز وسريع جداً" ⭐⭐⭐⭐⭐<br>
-"أفضل فني بلاط تعاملت معه" ⭐⭐⭐⭐⭐
-</p>
-</section>
-
-<footer>
-<p>نعمل في الرياض وجميع المناطق</p>
-<p>📞 0566223639</p>
-</footer>
-
-<!-- زر واتساب ثابت -->
-<a class="fixed-whatsapp" href="https://wa.me/966566223639">💬</a>
-<script>
-document.querySelectorAll('.gallery img').forEach(img => {
-  img.addEventListener('click', function() {
-
-    let overlay = document.createElement('div');
-    overlay.style.position = 'fixed';
-    overlay.style.top = 0;
-    overlay.style.left = 0;
-    overlay.style.width = '100%';
-    overlay.style.height = '100%';
-    overlay.style.background = 'rgba(0,0,0,0.8)';
-    overlay.style.display = 'flex';
-    overlay.style.justifyContent = 'center';
-    overlay.style.alignItems = 'center';
-    overlay.style.zIndex = 9999;
-
-    let bigImg = document.createElement('img');
-    bigImg.src = this.src;
-    bigImg.style.maxWidth = '90%';
-    bigImg.style.maxHeight = '90%';
-    bigImg.style.borderRadius = '10px';
-
-    overlay.appendChild(bigImg);
-    document.body.appendChild(overlay);
-
-    overlay.addEventListener('click', function() {
-      overlay.remove();
-    });
-
-  });
-});
-</script>
 </body>
 </html>
