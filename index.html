@@ -218,6 +218,7 @@ document.querySelectorAll('.gallery img').forEach(img => {
 <script>
 document.querySelectorAll('.gallery img').forEach(img => {
   img.addEventListener('click', function() {
+
     let overlay = document.createElement('div');
     overlay.style.position = 'fixed';
     overlay.style.top = 0;
@@ -239,7 +240,10 @@ document.querySelectorAll('.gallery img').forEach(img => {
     overlay.appendChild(bigImg);
     document.body.appendChild(overlay);
 
-    overlay.addEventListener('click', () => overlay.remove());
+    overlay.addEventListener('click', function() {
+      overlay.remove();
+    });
+
   });
 });
 </script>
