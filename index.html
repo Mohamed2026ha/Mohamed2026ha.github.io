@@ -3,21 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>تركيب بلاط وباركيه في الرياض</title>
 
 <style>
 body {
   margin:0;
-  font-family: Arial;
-  direction: rtl;
-  background:#ffffff;
+  font-family:Arial;
+  direction:rtl;
+  background:#fff;
 }
 
 /* الهيدر */
 header {
-  background: url("ضع_رابط_الصورة_هنا") center/cover no-repeat;
+  background: url("images/tile1.jpg") center/cover no-repeat;
   color:white;
-  padding:80px 20px;
+  padding:100px 20px;
   text-align:center;
   position:relative;
 }
@@ -25,50 +26,51 @@ header {
 header::before {
   content:"";
   position:absolute;
-  top:0;left:0;
-  width:100%;height:100%;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
   background:rgba(0,0,0,0.6);
 }
 
-header * {
-  position:relative;
-}
+header * { position:relative; }
 
-h1 {
-  font-size:32px;
-}
+h1 { font-size:32px; }
 
 .btn {
   display:inline-block;
   margin:10px;
   padding:12px 20px;
-  background:#28a745;
+  border-radius:8px;
   color:white;
   text-decoration:none;
-  border-radius:8px;
 }
 
-.btn.call {
-  background:#007bff;
-}
+.call { background:#007bff; }
+.whatsapp { background:#25d366; }
 
-/* الخدمات */
+/* خدمات */
 section {
-  padding:30px 15px;
+  padding:30px;
   text-align:center;
 }
 
-.services .box {
+.services {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:10px;
+}
+
+.box {
   background:#f5f5f5;
-  margin:10px;
   padding:15px;
   border-radius:10px;
 }
 
-/* الصور */
+/* معرض */
 .gallery {
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
   gap:10px;
 }
 
@@ -78,33 +80,32 @@ section {
   cursor:pointer;
 }
 
-/* تكبير الصورة */
+/* تكبير */
 .overlay {
   position:fixed;
-  top:0;left:0;
-  width:100%;height:100%;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
   background:rgba(0,0,0,0.8);
   display:flex;
   justify-content:center;
   align-items:center;
-  z-index:9999;
 }
 
 .overlay img {
   max-width:90%;
   max-height:90%;
-  border-radius:10px;
 }
 
-/* الفوتر */
+/* فوتر */
 footer {
   background:#111;
   color:white;
   padding:20px;
-  text-align:center;
 }
 
-/* زر واتساب ثابت */
+/* زر واتساب */
 .whatsapp-fixed {
   position:fixed;
   bottom:20px;
@@ -113,7 +114,6 @@ footer {
   color:white;
   padding:15px;
   border-radius:50%;
-  font-size:20px;
   text-decoration:none;
 }
 </style>
@@ -126,62 +126,70 @@ footer {
   <p>تنفيذ احترافي | جودة مضمونة | أسعار تنافسية</p>
 
   <a class="btn call" href="tel:+966566223639">📞 اتصال الآن</a>
-  <a class="btn" href="https://wa.me/966566223639">💬 واتساب</a>
-  <br>
-  <a class="btn" href="https://wa.me/79801850403">🇷🇺 واتساب روسي</a>
+  <a class="btn whatsapp" href="https://wa.me/966566223639">💬 واتساب</a><br>
+  <a class="btn whatsapp" href="https://wa.me/79801850403">🇷🇺 واتساب روسي</a>
 </header>
 
 <section>
-  <h2>خدماتنا</h2>
-  <div class="services">
-    <div class="box">تركيب بلاط أرضيات وجدران</div>
-    <div class="box">تركيب باركيه</div>
-    <div class="box">تشطيب حمامات</div>
-    <div class="box">ديكورات داخلية</div>
-  </div>
+<h2>خدماتنا</h2>
+<div class="services">
+  <div class="box">تركيب بلاط أرضيات وجدران</div>
+  <div class="box">تركيب باركيه</div>
+  <div class="box">تشطيب حمامات</div>
+  <div class="box">ديكورات داخلية</div>
+</div>
 </section>
 
 <section>
-  <h2>أعمالنا</h2>
+<h2>أعمالنا</h2>
 
-  <div class="gallery">
-    <img src="ضع_رابط_صورة1">
-    <img src="ضع_رابط_صورة2">
-    <img src="ضع_رابط_صورة3">
-    <img src="ضع_رابط_صورة4">
-  </div>
+<div class="gallery">
+
+<img src="images/work1.jpg">
+<img src="images/work2.jpg">
+
+<img src="images/moscow.jpg">
+<p>سابقة أعمالنا في موسكو</p>
+
+<img src="images/saudi.jpg">
+<p>تشطيب أرضيات لعائلة سعودية</p>
+
+<img src="images/you.jpg">
+<p>تنفيذ أعمال بلاط باحتراف</p>
+
+</div>
 </section>
 
 <section>
-  <h2>لماذا نحن؟</h2>
-  <p>
-  ✔ خبرة طويلة<br>
-  ✔ دقة في التنفيذ<br>
-  ✔ الالتزام بالمواعيد<br>
-  ✔ أسعار مناسبة
-  </p>
+<h2>لماذا نحن؟</h2>
+<p>
+✔ خبرة طويلة<br>
+✔ دقة في التنفيذ<br>
+✔ الالتزام بالمواعيد<br>
+✔ أسعار مناسبة
+</p>
 </section>
 
 <footer>
-  <p>نعمل في الرياض وجميع المناطق</p>
-  <p>📞 0566223639</p>
+<p>نعمل في الرياض وجميع المناطق</p>
+<p>📞 0566223639</p>
 </footer>
 
 <a class="whatsapp-fixed" href="https://wa.me/966566223639">💬</a>
 
 <script>
-document.querySelectorAll(".gallery img").forEach(img => {
-  img.onclick = function() {
-    let overlay = document.createElement("div");
-    overlay.className = "overlay";
+document.querySelectorAll(".gallery img").forEach(img=>{
+  img.onclick=function(){
+    let overlay=document.createElement("div");
+    overlay.className="overlay";
 
-    let bigImg = document.createElement("img");
-    bigImg.src = this.src;
+    let big=document.createElement("img");
+    big.src=this.src;
 
-    overlay.appendChild(bigImg);
+    overlay.appendChild(big);
     document.body.appendChild(overlay);
 
-    overlay.onclick = () => overlay.remove();
+    overlay.onclick=()=>overlay.remove();
   }
 });
 </script>
