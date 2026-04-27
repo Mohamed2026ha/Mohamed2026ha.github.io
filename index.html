@@ -23,19 +23,6 @@ direction:rtl;
 background:#f4f6f9;
 }
 
-/* لوجو */
-.logo{
-font-size:22px;
-font-weight:bold;
-background:#007bff;
-color:white;
-padding:10px;
-border-radius:8px;
-display:inline-block;
-margin-bottom:15px;
-}
-
-/* هيدر */
 header{
 background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
 url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
@@ -44,8 +31,13 @@ text-align:center;
 padding:100px 20px;
 }
 
-h1{font-size:34px;}
-p{font-size:18px;}
+.logo{
+font-size:22px;
+background:#007bff;
+padding:10px;
+border-radius:8px;
+display:inline-block;
+}
 
 .btn{
 display:inline-block;
@@ -54,7 +46,6 @@ margin:8px;
 border-radius:8px;
 color:white;
 text-decoration:none;
-font-size:15px;
 }
 
 .call{background:#007bff;}
@@ -67,15 +58,32 @@ text-align:center;
 
 .services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:15px;
 }
 
-.box{
+.service-box{
 background:white;
-padding:20px;
 border-radius:12px;
+overflow:hidden;
+text-decoration:none;
+color:black;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.service-box:hover{
+transform:scale(1.05);
+}
+
+.service-box img{
+width:100%;
+height:150px;
+object-fit:cover;
+}
+
+.service-box h3{
+padding:15px;
 }
 
 .gallery{
@@ -111,7 +119,6 @@ color:white;
 padding:15px;
 border-radius:50%;
 font-size:20px;
-text-decoration:none;
 }
 </style>
 </head>
@@ -120,73 +127,70 @@ text-decoration:none;
 
 <header>
 <div class="logo">🏠 ديكور بلاط وتشطيب</div>
-
 <h1>أفضل خدمات التشطيب في الرياض 🔥</h1>
-<p>بلاط | بورسلين | باركيه | دهانات | ترميم</p>
+<p>توريد + تركيب بأفضل سعر</p>
 
-<a class="btn call" href="tel:+966566223639">📞 اتصال الآن</a>
-<a class="btn whatsapp" href="https://wa.me/966566223639?text=أريد عرض سعر">💬 واتساب</a>
+<a class="btn call" href="tel:+966566223639">📞 اتصال</a>
+<a class="btn whatsapp" href="https://wa.me/966566223639">💬 واتساب</a>
 </header>
 
-<!-- عرض -->
-<section style="background:#111;color:#fff;">
-<h2>🔥 عرض خاص لفترة محدودة</h2>
-<p>خصم عند التوريد + التركيب معًا</p>
-<a class="btn whatsapp" href="https://wa.me/966566223639?text=أريد العرض">احجز الآن</a>
-</section>
-
-<!-- خدمات -->
 <section>
 <h2>خدماتنا</h2>
+
 <div class="services">
-<div class="box">تركيب بلاط احترافي</div>
-<div class="box">تركيب بورسلين</div>
-<div class="box">تركيب باركيه</div>
-<div class="box">دهانات حديثة</div>
-<div class="box">ترميم وصيانة</div>
-<div class="box">ديكور داخلي</div>
+
+<a class="service-box" href="https://wa.me/966566223639?text=أريد تركيب بلاط">
+<img src="https://images.unsplash.com/photo-1618220179428-22790b461013">
+<h3>تركيب بلاط احترافي</h3>
+</a>
+
+<a class="service-box" href="https://wa.me/966566223639?text=أريد تركيب بورسلين">
+<img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f">
+<h3>تركيب بورسلين</h3>
+</a>
+
+<a class="service-box" href="https://wa.me/966566223639?text=أريد تركيب باركيه">
+<img src="https://images.unsplash.com/photo-1583845112203-2932990235b2">
+<h3>تركيب باركيه</h3>
+</a>
+
+<a class="service-box" href="https://wa.me/966566223639?text=أريد دهانات">
+<img src="https://images.unsplash.com/photo-1598300053653-1c95f0c73b5d">
+<h3>دهانات حديثة</h3>
+</a>
+
+<a class="service-box" href="https://wa.me/966566223639?text=أريد ترميم">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+<h3>ترميم وصيانة</h3>
+</a>
+
+<a class="service-box" href="https://wa.me/966566223639?text=أريد ديكور">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<h3>ديكور داخلي</h3>
+</a>
+
 </div>
 </section>
 
-<!-- معرض صورك -->
+<!-- صورك -->
 <section>
-<h2>📸 أعمالنا الحقيقية في الرياض</h2>
-
+<h2>📸 أعمالنا الحقيقية</h2>
 <div class="gallery">
 
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/main/4d3c0f75-59d1-4a71-93c9-f2c05db1e1a5.png">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/main/6de0705f-b6f9-4e64-b85b-5ca2b97b0b0a.png">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2001_10_42%20AM.png">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2001_27_27%20AM.png">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2012_45_23%20AM.png">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2012_51_16%20AM.png">
 
 </div>
-
 </section>
 
-<!-- كتالوج -->
-<section>
-<h2>📂 اختر التصميم المناسب لك</h2>
-
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1618220179428-22790b461013">
-<img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1">
-<img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f">
-<img src="https://images.unsplash.com/photo-1583845112203-2932990235b2">
-</div>
-
-<a class="btn whatsapp" href="https://wa.me/966566223639?text=أريد كتالوج">💬 اطلب الكتالوج</a>
-</section>
-
-<!-- لماذا نحن -->
 <section class="highlight">
-<h2>لماذا تختارنا؟</h2>
+<h2>لماذا نحن؟</h2>
 <p>
-✔ خبرة كبيرة<br>
-✔ أسعار منافسة<br>
 ✔ تنفيذ احترافي<br>
-✔ التزام بالمواعيد
+✔ أسعار ممتازة<br>
+✔ سرعة في العمل<br>
+✔ توريد من المصنع مباشرة
 </p>
 </section>
 
