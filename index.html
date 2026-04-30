@@ -9,25 +9,29 @@
 body {
     margin: 0;
     font-family: Tahoma;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
+    background: #f5f5f5;
 }
 
 /* الهيدر */
 header {
-    background: rgba(0,0,0,0.8);
-    padding: 15px;
     text-align: center;
-    font-size: 22px;
+    background: #111;
+    color: white;
+    padding: 15px;
+}
+
+/* العلم */
+.flag {
+    width: 80px;
+    margin-top: 10px;
 }
 
 /* القسم الرئيسي */
 .hero {
     text-align: center;
-    padding: 40px;
+    padding: 30px;
+    background: #222;
+    color: white;
 }
 
 .btn {
@@ -42,16 +46,6 @@ header {
 
 .call { background: #007BFF; }
 .whatsapp { background: #25D366; }
-
-/* المحتوى */
-.content {
-    background: rgba(255,255,255,0.9);
-    color: black;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
 
 /* الأقسام */
 .section {
@@ -75,18 +69,21 @@ header {
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    transition: 0.3s;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
+/* النص */
+.content {
+    padding: 20px;
+    text-align: center;
+    background: white;
 }
 
 /* الفوتر */
 footer {
     text-align: center;
     padding: 15px;
-    background: rgba(0,0,0,0.8);
+    background: #111;
+    color: white;
 }
 </style>
 
@@ -95,67 +92,40 @@ footer {
 <body>
 
 <header>
-🔥 محمد للتشطيبات - الرياض حي الروضة
+<img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg">
+<h3>عز وفخر</h3>
+<h2>محمد للتشطيبات - الرياض حي الروضة</h2>
 </header>
 
 <section class="hero">
-    <h1>تشطيبات متكاملة بأعلى جودة</h1>
-    <p>بلاط - رخام - بورسلان - دهانات - سباكة</p>
+<h1>تشطيبات متكاملة بأعلى جودة</h1>
+<p>بلاط - رخام - بورسلان - دهانات - سباكة - باركيه</p>
 
-    <a class="btn call" href="tel:0566223639">📞 اتصال مباشر</a>
-    <a class="btn whatsapp" href="https://wa.me/966566223639">💬 واتساب السعودي</a>
-    <a class="btn whatsapp" href="https://wa.me/79801850403">🌍 واتساب دولي</a>
+<a class="btn call" href="tel:0566223639">📞 اتصال مباشر</a>
+<a class="btn whatsapp" href="https://wa.me/966566223639">💬 واتساب السعودي</a>
+<a class="btn whatsapp" href="https://wa.me/79801850403">🌍 واتساب دولي</a>
 </section>
 
 <section class="content">
-<h2>خدماتنا في الرياض</h2>
-
+<h2>خدماتنا</h2>
 <p>
-✔ تركيب البلاط بجميع أنواعه  
-✔ تركيب الرخام والدرج  
-✔ تركيب البورسلين  
-✔ أعمال الدهانات  
-✔ الترميم والعزل  
-✔ السباكة  
-✔ تركيب الباركيه  
-✔ توريد وتركيب ديكورات
-</p>
-
-<p>
-📍 معارضنا في الرياض - حي الروضة  
-📞 تواصل الآن واحجز شغلك
+تركيب البلاط - الرخام - البورسلين - الدهانات - الترميم - العزل - السباكة - الباركيه  
+توريد وتركيب جميع أعمال الديكور في الرياض حي الروضة  
+مع خبرة كبيرة وجودة عالية وأسعار مناسبة
 </p>
 </section>
 
-<!-- قسم البلاط -->
+<!-- أعمالك -->
 <section class="section">
-<h2>قسم البلاط</h2>
+<h2>أعمالنا | سابقة أعمالنا بالرياض</h2>
 <div class="gallery">
 
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/IMG_20200120_121940.jpg">
+<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/IMG_20210701_000155_881.jpg">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545540677.jpg">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545532848.jpg">
-
-</div>
-</section>
-
-<!-- قسم البورسلان -->
-<section class="section">
-<h2>قسم البورسلان</h2>
-<div class="gallery">
-
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/IMG_20210701_000155_881.jpg">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545513606.jpg">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545503274.jpg">
-
-</div>
-</section>
-
-<!-- قسم الرخام -->
-<section class="section">
-<h2>قسم الرخام</h2>
-<div class="gallery">
-
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545499246.jpg">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545477121.jpg">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545452677.jpg">
@@ -163,15 +133,43 @@ footer {
 </div>
 </section>
 
-<!-- قسم الدهانات -->
+<!-- بلاط -->
+<section class="section">
+<h2>قسم البلاط</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b">
+<img src="https://images.unsplash.com/photo-1582582494700-ec5a4b7f2b9f">
+<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6">
+</div>
+</section>
+
+<!-- بورسلان -->
+<section class="section">
+<h2>قسم البورسلان</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<img src="https://images.unsplash.com/photo-1613977257363-707ba9348227">
+<img src="https://images.unsplash.com/photo-1616596870275-3e85b6c1c9b3">
+</div>
+</section>
+
+<!-- رخام -->
+<section class="section">
+<h2>قسم الرخام</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1598300053653-1aef7f7c2a2b">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0">
+</div>
+</section>
+
+<!-- دهانات -->
 <section class="section">
 <h2>قسم الدهانات</h2>
 <div class="gallery">
-
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545400644.jpg">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545393702.jpg">
-<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545187845.jpg">
-
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+<img src="https://images.unsplash.com/photo-1599619351208-3e6c839d6828">
+<img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828">
 </div>
 </section>
 
