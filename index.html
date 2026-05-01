@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,31 +20,38 @@ header {
     padding: 15px;
 }
 
-/* العلم */
 .flag {
     width: 80px;
     margin-top: 10px;
 }
 
-/* القسم الرئيسي */
+/* الهيرو */
 .hero {
     text-align: center;
-    padding: 30px;
+    padding: 25px;
     background: #222;
     color: white;
 }
 
+.hero img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* الأزرار */
 .btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 20px;
-    text-decoration: none;
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
     font-size: 18px;
-    border-radius: 8px;
+    border-radius: 10px;
+    text-decoration: none;
     color: white;
 }
 
-.call { background: #007BFF; }
+.call { background: #28a745; }
 .whatsapp { background: #25D366; }
 
 /* الأقسام */
@@ -54,7 +61,6 @@ header {
 
 .section h2 {
     text-align: center;
-    margin-bottom: 15px;
 }
 
 /* الجاليري */
@@ -71,11 +77,13 @@ header {
     border-radius: 10px;
 }
 
-/* النص */
-.content {
-    padding: 20px;
-    text-align: center;
+/* صندوق ثقة */
+.trust {
     background: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 /* الفوتر */
@@ -84,6 +92,22 @@ footer {
     padding: 15px;
     background: #111;
     color: white;
+}
+
+/* زر ثابت */
+.fixed-call {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: #28a745;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 20px;
+    text-decoration: none;
+    z-index: 999;
 }
 </style>
 
@@ -99,27 +123,34 @@ footer {
 
 <section class="hero">
 <h1>تشطيبات متكاملة بأعلى جودة</h1>
+
+<p style="color:#ffd700;font-size:18px;">
+أكثر من 100 مشروع ناجح داخل الرياض
+</p>
+
 <p>بلاط - رخام - بورسلان - دهانات - سباكة - باركيه</p>
+
+<!-- صورة رئيسية من شغلك -->
+<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/IMG_20200120_121940.jpg">
 
 <a class="btn call" href="tel:0566223639">📞 اتصال مباشر</a>
 <a class="btn whatsapp" href="https://wa.me/966566223639">💬 واتساب السعودي</a>
 <a class="btn whatsapp" href="https://wa.me/79801850403">🌍 واتساب دولي</a>
 </section>
 
-<section class="content">
-<h2>خدماتنا</h2>
-<p>
-تركيب البلاط - الرخام - البورسلين - الدهانات - الترميم - العزل - السباكة - الباركيه  
-توريد وتركيب جميع أعمال الديكور في الرياض حي الروضة  
-مع خبرة كبيرة وجودة عالية وأسعار مناسبة
-</p>
-</section>
+<div class="trust">
+<h3>لماذا تختارنا؟</h3>
+<p>✔ شغل نظيف واحترافي</p>
+<p>✔ التزام بالمواعيد</p>
+<p>✔ أسعار مناسبة</p>
+<p>✔ معاينة مجانية</p>
+</div>
 
 <!-- أعمالك -->
 <section class="section">
 <h2>أعمالنا | سابقة أعمالنا بالرياض</h2>
-<div class="gallery">
 
+<div class="gallery">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/IMG_20200120_121940.jpg">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/IMG_20210701_000155_881.jpg">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545540677.jpg">
@@ -129,53 +160,29 @@ footer {
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545499246.jpg">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545477121.jpg">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545452677.jpg">
+</div>
 
+<div style="text-align:center;margin-top:15px;">
+<a class="btn call" href="tel:0566223639">📞 اتصل الآن</a>
 </div>
 </section>
 
-<!-- بلاط -->
+<!-- اتصال -->
 <section class="section">
-<h2>قسم البلاط</h2>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b">
-<img src="https://images.unsplash.com/photo-1582582494700-ec5a4b7f2b9f">
-<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6">
-</div>
-</section>
+<h2>احجز الآن</h2>
+<p>اتصل الآن واحصل على معاينة مجانية داخل الرياض</p>
 
-<!-- بورسلان -->
-<section class="section">
-<h2>قسم البورسلان</h2>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-<img src="https://images.unsplash.com/photo-1613977257363-707ba9348227">
-<img src="https://images.unsplash.com/photo-1616596870275-3e85b6c1c9b3">
-</div>
-</section>
-
-<!-- رخام -->
-<section class="section">
-<h2>قسم الرخام</h2>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1598300053653-1aef7f7c2a2b">
-<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
-<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0">
-</div>
-</section>
-
-<!-- دهانات -->
-<section class="section">
-<h2>قسم الدهانات</h2>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
-<img src="https://images.unsplash.com/photo-1599619351208-3e6c839d6828">
-<img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828">
-</div>
+<a class="btn call" href="tel:0566223639">📞 اتصال مباشر</a>
 </section>
 
 <footer>
 © جميع الحقوق محفوظة - محمد للتشطيبات
 </footer>
+
+<!-- زر اتصال ثابت -->
+<a href="tel:0566223639" class="fixed-call">
+📞 اضغط للاتصال الآن
+</a>
 
 </body>
 </html>
