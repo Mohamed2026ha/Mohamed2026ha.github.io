@@ -12,6 +12,19 @@ body {
     background: #f5f5f5;
 }
 
+/* خلفية من شغلك */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:url('https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/IMG_20200120_121940.jpg') no-repeat center center/cover;
+    opacity:0.08;
+    z-index:-1;
+}
+
 /* الهيدر */
 header {
     text-align: center;
@@ -23,6 +36,19 @@ header {
 .flag {
     width: 80px;
     margin-top: 10px;
+}
+
+/* قائمة تنقل */
+.nav {
+    text-align:center;
+    background:#000;
+    padding:10px;
+}
+.nav a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+    font-size:14px;
 }
 
 /* الهيرو */
@@ -121,16 +147,25 @@ footer {
 <h2>محمد للتشطيبات - الرياض حي الروضة</h2>
 </header>
 
-<section class="hero">
+<!-- روابط داخلية -->
+<div class="nav">
+<a href="#home">الرئيسية</a>
+<a href="#services">خدماتنا</a>
+<a href="#works">أعمالنا</a>
+<a href="#contact">اتصل بنا</a>
+</div>
+
+<section id="home" class="hero">
 <h1>تشطيبات متكاملة بأعلى جودة</h1>
+
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/file_00000000f1847243bb89c767c22cba93.png">
+
 <p style="color:#ffd700;font-size:18px;">
 أكثر من 100 مشروع ناجح داخل الرياض
 </p>
 
 <p>بلاط - رخام - بورسلان - دهانات - سباكة - باركيه</p>
 
-<!-- صورة رئيسية من شغلك -->
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/IMG_20200120_121940.jpg">
 
 <a class="btn call" href="tel:0566223639">📞 اتصال مباشر</a>
@@ -138,7 +173,7 @@ footer {
 <a class="btn whatsapp" href="https://wa.me/79801850403">🌍 واتساب دولي</a>
 </section>
 
-<div class="trust">
+<div id="services" class="trust">
 <h3>لماذا تختارنا؟</h3>
 <p>✔ شغل نظيف واحترافي</p>
 <p>✔ التزام بالمواعيد</p>
@@ -147,16 +182,18 @@ footer {
 </div>
 
 <!-- أعمالك -->
-<section class="section">
+<section id="works" class="section">
 <h2>أعمالنا | سابقة أعمالنا بالرياض</h2>
+
 <div class="gallery">
+<!-- كل صورك بدون حذف -->
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/file_000000001a5c724682faa5e7ec914603.png">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2012_54_50%20AM.png">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545083090.jpg">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545101873.jpg">
-    <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/4d3c0f75-59d1-4a71-93c9-f2c05db1e1a5.png">
-    <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2012_45_23%20AM.png">
-    <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2012_51_16%20AM.png">
+<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/4d3c0f75-59d1-4a71-93c9-f2c05db1e1a5.png">
+<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2012_45_23%20AM.png">
+<img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/ChatGPT%20Image%20Apr%2026%2C%202026%2C%2012_51_16%20AM.png">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/IMG_20200120_121940.jpg">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/IMG_20210701_000155_881.jpg">
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/FB_IMG_1777545540677.jpg">
@@ -173,11 +210,9 @@ footer {
 </div>
 </section>
 
-<!-- اتصال -->
-<section class="section">
+<section id="contact" class="section">
 <h2>احجز الآن</h2>
 <p>اتصل الآن واحصل على معاينة مجانية داخل الرياض</p>
-
 <a class="btn call" href="tel:0566223639">📞 اتصال مباشر</a>
 </section>
 
@@ -185,7 +220,6 @@ footer {
 © جميع الحقوق محفوظة - محمد للتشطيبات
 </footer>
 
-<!-- زر اتصال ثابت -->
 <a href="tel:0566223639" class="fixed-call">
 📞 اضغط للاتصال الآن
 </a>
