@@ -44,15 +44,20 @@ return false;
 
 <title>محمد للتشطيبات والديكور بالرياض</title>
 
+<meta name="description"
+content="تشطيبات وديكورات داخل الرياض - تركيب بلاط ورخام وبورسلان وباركيه ودهانات وسباكة وعزل وترميم بأفضل الأسعار والجودة.">
+
 <style>
 
 body{
 margin:0;
 font-family:Tahoma;
 background:#f5f5f5;
+line-height:1.8;
 }
 
-/* خلفية */
+/* الخلفية */
+
 body::before{
 content:"";
 position:fixed;
@@ -66,33 +71,39 @@ z-index:-1;
 }
 
 /* الهيدر */
+
 header{
 text-align:center;
 background:#111;
 color:white;
-padding:15px;
+padding:20px;
 }
 
 .flag{
-width:80px;
+width:90px;
 margin-top:10px;
 }
 
 /* القائمة */
+
 .nav{
 text-align:center;
 background:#000;
-padding:10px;
+padding:12px;
+position:sticky;
+top:0;
+z-index:999;
 }
 
 .nav a{
 color:white;
 margin:0 10px;
 text-decoration:none;
-font-size:14px;
+font-size:15px;
 }
 
-/* الهيرو */
+/* الرئيسية */
+
 .hero{
 text-align:center;
 padding:25px;
@@ -102,21 +113,23 @@ color:white;
 
 .hero img{
 width:100%;
-border-radius:10px;
+border-radius:12px;
 margin-top:15px;
 }
 
 /* الأزرار */
+
 .btn{
 display:block;
 width:90%;
-margin:10px auto;
+margin:12px auto;
 padding:15px;
 font-size:18px;
-border-radius:10px;
+border-radius:12px;
 text-decoration:none;
 color:white;
 box-sizing:border-box;
+font-weight:bold;
 }
 
 .call{
@@ -127,63 +140,59 @@ background:#28a745;
 background:#25D366;
 }
 
+.global{
+background:#075E54;
+}
+
 /* الأقسام */
+
 .section{
 padding:20px;
 }
 
 .section h2{
 text-align:center;
+margin-bottom:20px;
 }
 
 /* معرض الصور */
+
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:10px;
+gap:12px;
 }
 
 .gallery img{
 width:100%;
-height:200px;
+height:220px;
 object-fit:cover;
-border-radius:10px;
+border-radius:12px;
 }
 
 /* صندوق الثقة */
+
 .trust{
 background:white;
 margin:15px;
-padding:15px;
-border-radius:10px;
+padding:20px;
+border-radius:12px;
 text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
 /* الفوتر */
+
 footer{
 text-align:center;
-padding:15px;
+padding:20px;
 background:#111;
 color:white;
-}
-
-/* زر اتصال ثابت */
-.fixed-call{
-position:fixed;
-bottom:10px;
-left:10px;
-right:10px;
-background:#28a745;
-color:white;
-text-align:center;
-padding:15px;
-border-radius:12px;
-font-size:20px;
-text-decoration:none;
-z-index:999;
+margin-top:30px;
 }
 
 /* الأزرار العائمة */
+
 .float-btn{
 position:fixed;
 left:20px;
@@ -193,21 +202,39 @@ border-radius:50px;
 font-size:16px;
 text-decoration:none;
 z-index:9999;
+font-weight:bold;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
 }
 
 .float-call{
 bottom:20px;
-background:#25D366;
+background:#28a745;
 }
 
 .float-whatsapp{
-bottom:80px;
-background:#128C7E;
+bottom:85px;
+background:#25D366;
 }
 
 .float-global{
-bottom:140px;
+bottom:150px;
 background:#075E54;
+}
+
+/* موبايل */
+
+@media(max-width:768px){
+
+.nav a{
+display:inline-block;
+margin:5px;
+font-size:14px;
+}
+
+.hero h1{
+font-size:24px;
+}
+
 }
 
 </style>
@@ -216,6 +243,8 @@ background:#075E54;
 
 <body>
 
+<!-- الهيدر -->
+
 <header>
 
 <img class="flag"
@@ -223,7 +252,7 @@ src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.sv
 
 <h3>عز وفخر</h3>
 
-<h2>محمد للتشطيبات - الرياض حي الروضة</h2>
+<h2>محمد للتشطيبات والديكور بالرياض - حي الروضة</h2>
 
 </header>
 
@@ -245,24 +274,159 @@ src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.sv
 
 <section id="home" class="hero">
 
-<h1>تشطيبات متكاملة بأعلى جودة</h1>
+<h1>تشطيبات متكاملة بأعلى جودة داخل الرياض</h1>
+
+<p style="color:#ffd700;font-size:20px;">
+أكثر من 100 مشروع ناجح
+</p>
 
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/file_00000000f1847243bb89c767c22cba93.png">
 
-<p style="color:#ffd700;font-size:18px;">
-أكثر من 100 مشروع ناجح داخل الرياض
-</p>
-
 <p>
-بلاط - رخام - بورسلان - دهانات - سباكة - باركيه
+بلاط - رخام - بورسلان - باركيه - دهانات - سباكة - ترميم - عزل
 </p>
 
 <img src="https://raw.githubusercontent.com/Mohamed2026ha/Mohamed2026ha.github.io/refs/heads/main/IMG_20200120_121940.jpg">
 
-<!-- زر الاتصال مع التتبع -->
+<!-- زر الاتصال -->
 
 <a class="btn call"
 href="tel:+966566223639"
 onclick="return gtag_report_conversion('tel:+966566223639');">
 
 📞 اتصال مباشر
+</a>
+
+<!-- زر واتساب سعودي -->
+
+<a class="btn whatsapp"
+href="https://wa.me/966566223639"
+target="_blank"
+onclick="return gtag_report_conversion('https://wa.me/966566223639');">
+
+💬 واتساب سعودي
+</a>
+
+<!-- زر واتساب دولي -->
+
+<a class="btn global"
+href="https://wa.me/79801850403"
+target="_blank">
+
+🌍 واتساب دولي
+</a>
+
+</section>
+
+<!-- الخدمات -->
+
+<section id="services" class="section">
+
+<h2>خدماتنا</h2>
+
+<div class="trust">
+
+✅ تركيب جميع أنواع البلاط والسيراميك والبورسلان  
+<br>
+✅ تركيب الرخام والدرج  
+<br>
+✅ دهانات وتشطيبات حديثة  
+<br>
+✅ باركيه وديكورات داخلية  
+<br>
+✅ أعمال السباكة والترميم  
+<br>
+✅ عزل الأسطح والحمامات  
+<br>
+✅ تكسير وتجديد كامل للشقق والفلل  
+
+</div>
+
+</section>
+
+<!-- معرض الأعمال -->
+
+<section id="works" class="section">
+
+<h2>سابقة أعمالنا بالرياض</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
+
+<img src="https://images.unsplash.com/photo-1494526585095-c41746248156">
+
+<img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688">
+
+<img src="https://images.unsplash.com/photo-1513694203232-719a280e022f">
+
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+
+</div>
+
+</section>
+
+<!-- التواصل -->
+
+<section id="contact" class="section">
+
+<h2>اتصل بنا الآن</h2>
+
+<div class="trust">
+
+📞 الهاتف: 0566223639
+
+<br><br>
+
+🇷🇺 واتساب روسي:
++79801850403
+
+<br><br>
+
+متواجدون داخل الرياض وجميع الأحياء
+
+</div>
+
+</section>
+
+<!-- الفوتر -->
+
+<footer>
+
+جميع الحقوق محفوظة © محمد للتشطيبات والديكور بالرياض
+
+</footer>
+
+<!-- الأزرار العائمة -->
+
+<!-- اتصال -->
+
+<a class="float-btn float-call"
+href="tel:+966566223639"
+onclick="return gtag_report_conversion('tel:+966566223639');">
+
+📞 اتصال
+</a>
+
+<!-- واتساب سعودي -->
+
+<a class="float-btn float-whatsapp"
+href="https://wa.me/966566223639"
+target="_blank">
+
+💬 واتساب
+</a>
+
+<!-- واتساب روسي -->
+
+<a class="float-btn float-global"
+href="https://wa.me/79801850403"
+target="_blank">
+
+🌍 روسيا
+</a>
+
+</body>
+</html>
