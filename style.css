@@ -1,1 +1,98 @@
+/* ===========================
+   Mohamed Decoration Website
+=========================== */
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Cairo',sans-serif;
+background:#f4f6f8;
+color:#222;
+line-height:1.8;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+a{
+text-decoration:none;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+header{
+position:fixed;
+top:0;
+right:0;
+left:0;
+z-index:999;
+background:#0b2748;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.navbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 8%;
+}
+
+.logo h2{
+
+color:#FFD700;
+
+font-size:28px;
+
+font-weight:800;
+
+}
+
+.navbar ul{
+
+display:flex;
+
+gap:30px;
+
+list-style:none;
+
+}
+
+.navbar a{
+
+color:white;
+
+font-size:17px;
+
+font-weight:700;
+
+transition:.3s;
+
+}
+
+.navbar a:hover{
+
+color:#FFD700;
+
+}
+
+/* ===========================
+Hero
