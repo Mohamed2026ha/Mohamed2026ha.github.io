@@ -1,255 +1,589 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>محمد للتشطيبات والديكور بالرياض</title>
+<title>مقاول تشطيبات وبلاط ورخام بالرياض | محمد حافظ</title>
 
-<meta name="description" content="محمد للتشطيبات والديكور بالرياض - تركيب سيراميك، بورسلين، رخام، جرانيت، تشطيب فلل وشقق، ترميم، دهانات، بأعلى جودة وأفضل الأسعار.">
+<meta name="description" content="مقاول تشطيبات بالرياض متخصص في البلاط والبورسلان والرخام والجرانيت والدرج والباركيه والدهانات والإنترلوك والترميمات. خبرة روسية وأوروبية. اتصل الآن 0566223639">
+<meta name="keywords" content="مقاول تشطيبات بالرياض, مقاول بلاط بالرياض, تركيب رخام بالرياض, تركيب بورسلان بالرياض, تشطيب فلل الرياض, ترميمات الرياض, دهانات الرياض, إنترلوك الرياض">
 
-<meta name="keywords" content="تشطيبات الرياض, تركيب سيراميك الرياض, بورسلين الرياض, رخام الرياض, معلم سيراميك, تشطيب فلل">
+<meta name="robots" content="index, follow">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-<!-- Google Ads -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18135043110"></script>
-
-<script>
-window.dataLayer = window.dataLayer || [];
-
-function gtag(){
-dataLayer.push(arguments);
+<style>
+:root {
+    --black:#151515;
+    --gold:#c8a56a;
+    --white:#ffffff;
+    --light:#f7f7f7;
+    --text:#333;
+    --green:#25D366;
 }
 
-gtag('js', new Date());
-
-gtag('config','AW-18135043110');
-
-function gtag_report_conversion(url){
-
-var callback=function(){
-
-if(url){
-window.location=url;
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,"Tahoma",sans-serif;
 }
 
-};
-
-gtag('event','conversion',{
-
-'send_to':'AW-18135043110/SJeKCMGU26kcEKaYu8dD',
-
-'event_callback':callback
-
-});
-
-return false;
-
+html {
+    scroll-behavior:smooth;
 }
-</script>
 
+body {
+    background:var(--light);
+    color:var(--text);
+    line-height:1.8;
+}
+
+/* HEADER */
+
+header {
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(21,21,21,.97);
+    border-bottom:3px solid var(--gold);
+    padding:14px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo {
+    color:white;
+    font-size:21px;
+    font-weight:bold;
+}
+
+.logo span {
+    color:var(--gold);
+}
+
+nav a {
+    color:white;
+    text-decoration:none;
+    margin:0 8px;
+    font-weight:bold;
+}
+
+nav a:hover {
+    color:var(--gold);
+}
+
+/* HERO */
+
+.hero {
+    min-height:72vh;
+    padding:80px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+
+    background:
+    linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.82)),
+    url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80")
+    center/cover no-repeat;
+}
+
+.hero h1 {
+    color:var(--gold);
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.hero p {
+    max-width:750px;
+    font-size:19px;
+    margin-bottom:25px;
+}
+
+.phone {
+    font-size:25px;
+    font-weight:bold;
+    color:white;
+    margin-bottom:25px;
+    direction:ltr;
+}
+
+.buttons {
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.btn {
+    display:inline-block;
+    padding:14px 25px;
+    border-radius:7px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover {
+    transform:translateY(-3px);
+}
+
+.call {
+    background:var(--gold);
+    color:#111;
+}
+
+.whatsapp {
+    background:var(--green);
+    color:white;
+}
+
+/* SECTIONS */
+
+section {
+    padding:65px 8%;
+}
+
+.title {
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.title h2 {
+    display:inline-block;
+    font-size:30px;
+    color:var(--black);
+    border-bottom:3px solid var(--gold);
+    padding-bottom:8px;
+}
+
+.about {
+    background:white;
+}
+
+.about p {
+    max-width:950px;
+    margin:auto;
+    font-size:18px;
+    text-align:center;
+}
+
+/* SERVICES */
+
+.services {
+    background:var(--light);
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
+
+.card {
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    border-top:4px solid var(--black);
+    transition:.3s;
+}
+
+.card:hover {
+    transform:translateY(-5px);
+    border-top-color:var(--gold);
+}
+
+.card h3 {
+    color:var(--black);
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+/* GALLERY */
+
+.gallery {
+    background:white;
+}
+
+.gallery-card {
+    background:#f5f5f5;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.gallery-card img {
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
+}
+
+.gallery-card div {
+    padding:15px;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* EXPERIENCE */
+
+.experience {
+    background:#151515;
+    color:white;
+    text-align:center;
+}
+
+.experience h2 {
+    color:var(--gold);
+    margin-bottom:20px;
+}
+
+.experience p {
+    max-width:850px;
+    margin:auto;
+    font-size:18px;
+}
+
+/* CONTACT */
+
+.contact {
+    background:white;
+    text-align:center;
+}
+
+.contact h2 {
+    margin-bottom:15px;
+}
+
+.contact-number {
+    display:block;
+    font-size:30px;
+    color:#111;
+    text-decoration:none;
+    font-weight:bold;
+    direction:ltr;
+    margin:15px;
+}
+
+/* FOOTER */
+
+footer {
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px 15px 100px;
+}
+
+footer strong {
+    color:var(--gold);
+}
+
+/* FIXED BUTTONS */
+
+.fixed-buttons {
+    position:fixed;
+    bottom:15px;
+    left:15px;
+    right:15px;
+    z-index:2000;
+    display:flex;
+    gap:10px;
+}
+
+.fixed-buttons a {
+    flex:1;
+    text-align:center;
+    padding:14px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 3px 12px rgba(0,0,0,.3);
+}
+
+.fixed-call {
+    background:var(--gold);
+    color:#111;
+}
+
+.fixed-whatsapp {
+    background:var(--green);
+    color:white;
+}
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    header {
+        justify-content:center;
+    }
+
+    nav {
+        display:none;
+    }
+
+    .hero {
+        min-height:75vh;
+    }
+
+    .hero h1 {
+        font-size:29px;
+    }
+
+    .hero p {
+        font-size:16px;
+    }
+
+    section {
+        padding:50px 5%;
+    }
+
+    .title h2 {
+        font-size:25px;
+    }
+
+    .contact-number {
+        font-size:25px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
 
-<nav class="navbar">
-
 <div class="logo">
-
-<h2>
-
-<i class="fa-solid fa-house"></i>
-
-محمد للتشطيبات والديكور
-
-</h2>
-
+محمد حافظ <span>للتشطيبات والديكور</span>
 </div>
 
-<ul>
-
-<li><a href="#home">الرئيسية</a></li>
-
-<li><a href="#services">الخدمات</a></li>
-
-<li><a href="#gallery">معرض الأعمال</a></li>
-
-<li><a href="#about">من نحن</a></li>
-
-<li><a href="#contact">اتصل بنا</a></li>
-
-</ul>
-
+<nav>
+<a href="#about">من نحن</a>
+<a href="#services">خدماتنا</a>
+<a href="#gallery">أعمالنا</a>
+<a href="#contact">اتصل بنا</a>
 </nav>
 
 </header>
 
-<section class="hero" id="home">
 
-<div class="overlay">
+<!-- HERO -->
 
-<h1>
+<section class="hero">
 
-محمد للتشطيبات والديكور بالرياض
-
-</h1>
+<h1>مقاول تشطيبات وبلاط ورخام بالرياض</h1>
 
 <p>
-
-متخصصون في تنفيذ أعمال السيراميك والبورسلين والرخام والجرانيت وتشطيب الفلل والشقق بأعلى معايير الجودة.
-
+تنفيذ جميع أعمال التشطيبات والترميمات للفلل والمنازل والمجالس والأحواش
+بخبرة طويلة في أعمال البلاط والبورسلان والرخام والجرانيت والدهانات والديكور.
 </p>
 
-<div class="hero-buttons">
+<div class="phone">
+0566223639
+</div>
 
-<a href="tel:+966566223639" class="btn phone">
+<div class="buttons">
 
-<i class="fa-solid fa-phone"></i>
-
-اتصل الآن
-
+<a class="btn call" href="tel:+966566223639">
+📞 اتصل الآن
 </a>
 
-<a href="https://wa.me/966566223639"
-
-class="btn whatsapp"
-
-onclick="return gtag_report_conversion('https://wa.me/966566223639');">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-واتساب
-
+<a class="btn whatsapp"
+href="https://wa.me/966566223639"
+target="_blank">
+💬 واتساب
 </a>
 
 </div>
 
-</div>
-
 </section>
 
-  <!-- الخدمات -->
 
-<section class="services" id="services">
-
-<div class="container">
-
-<h2 class="section-title">خدماتنا</h2>
-
-<div class="service-grid">
-
-<div class="card">
-<i class="fa-solid fa-border-all"></i>
-<h3>تركيب السيراميك</h3>
-<p>تنفيذ احترافي لجميع أنواع السيراميك بدقة وجودة عالية.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-layer-group"></i>
-<h3>تركيب البورسلين</h3>
-<p>بورسلين أرضيات وجدران باستخدام أحدث أدوات التسوية.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-gem"></i>
-<h3>الرخام والجرانيت</h3>
-<p>تركيب وتقطيع وتشطيب الرخام والجرانيت باحترافية.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-bath"></i>
-<h3>تشطيب الحمامات</h3>
-<p>تنفيذ حمامات مودرن وكلاسيك بأفضل الخامات.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-house"></i>
-<h3>تشطيب الفلل والشقق</h3>
-<p>تشطيب كامل من البداية حتى التسليم.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-screwdriver-wrench"></i>
-<h3>ترميم وتجديد</h3>
-<p>ترميم المنازل والمحال التجارية بأعلى جودة.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- معرض الأعمال -->
-
-<section class="gallery" id="gallery">
-
-<div class="container">
-
-<h2 class="section-title">معرض أعمالنا</h2>
-
-<div class="gallery-grid">
-
-<img src="images/work1.jpg" alt="تشطيب سيراميك">
-
-<img src="images/work2.jpg" alt="بورسلين">
-
-<img src="images/work3.jpg" alt="رخام">
-
-<img src="images/work4.jpg" alt="حمام">
-
-<img src="images/work5.jpg" alt="تشطيب">
-
-<img src="images/work6.jpg" alt="ديكور">
-
-</div>
-
-</div>
-
-</section>
-
-<!-- من نحن -->
+<!-- ABOUT -->
 
 <section class="about" id="about">
 
-<div class="container">
-
-<h2 class="section-title">من نحن</h2>
+<div class="title">
+<h2>من نحن</h2>
+</div>
 
 <p>
+نقدم خدمات التشطيبات والترميمات الداخلية والخارجية في مدينة الرياض.
+نمتلك خبرة طويلة في تنفيذ أعمال البلاط والبورسلان والرخام والجرانيت
+والدرج والباركيه والدهانات واللياسة والإنترلوك والبردورات وأعمال الترميم.
 
-محمد للتشطيبات والديكور بالرياض، نقدم خدمات تركيب السيراميك والبورسلين والرخام والجرانيت وتشطيب الفلل والشقق بأعلى معايير الجودة، مع الالتزام بالمواعيد والدقة في التنفيذ.
-
+نحرص على دقة التنفيذ ونظافة العمل والالتزام بالمواعيد، مع إمكانية تنفيذ
+الأعمال حسب التصميم والمقاسات المطلوبة.
 </p>
 
-<div class="features">
+</section>
 
-<div>
-<h3>✔ جودة عالية</h3>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<div class="title">
+<h2>خدماتنا</h2>
 </div>
 
-<div>
-<h3>✔ أسعار منافسة</h3>
+<div class="grid">
+
+<div class="card">
+<h3>🧱 البلاط والسيراميك</h3>
+<p>
+تركيب جميع أنواع البلاط والسيراميك للمنازل والفلل والحمامات والمطابخ.
+</p>
 </div>
 
-<div>
-<h3>✔ التزام بالمواعيد</h3>
+<div class="card">
+<h3>🏛️ الرخام والجرانيت</h3>
+<p>
+تركيب الرخام والجرانيت للواجهات والأرضيات والدرج والمداخل والمطابخ.
+</p>
 </div>
 
+<div class="card">
+<h3>✨ البورسلان</h3>
+<p>
+تركيب البورسلان بمختلف المقاسات والتصاميم للأرضيات والجدران.
+</p>
+</div>
+
+<div class="card">
+<h3>🪜 الدرج</h3>
+<p>
+تنفيذ وتركيب كسوة الدرج بالرخام والبورسلان والسيراميك حسب التصميم.
+</p>
+</div>
+
+<div class="card">
+<h3>🪵 الباركيه</h3>
+<p>
+تركيب أرضيات الباركيه الخشبي وتشطيبات الأرضيات الداخلية.
+</p>
+</div>
+
+<div class="card">
+<h3>🎨 الدهانات والديكور</h3>
+<p>
+دهانات داخلية وخارجية وتشطيبات وديكورات عصرية للمنازل والفلل.
+</p>
+</div>
+
+<div class="card">
+<h3>🧱 إنترلوك وبردورات</h3>
+<p>
+تنفيذ الساحات والمشايات والأحواش بالإنترلوك والبردورات.
+</p>
+</div>
+
+<div class="card">
+<h3>🔨 الترميمات</h3>
+<p>
+ترميم وتجديد المباني والمنازل ومعالجة أعمال التشطيب القديمة.
+</p>
+</div>
+
+<div class="card">
+<h3>🏠 اللياسة والتشطيبات</h3>
+<p>
+أعمال اللياسة والتجهيز والتشطيبات الداخلية والخارجية.
+</p>
+</div>
+
+<div class="card">
+<h3>🚿 أعمال الحمامات والمطابخ</h3>
+<p>
+تركيب البلاط والرخام والبورسلان وتشطيبات الحمامات والمطابخ.
+</p>
+</div>
+
+<div class="card">
+<h3>🧹 تنظيف وتجهيز</h3>
+<p>
+تنظيف وتجهيز المواقع بعد أعمال البناء والترميم والتشطيب.
+</p>
+</div>
+
+<div class="card">
+<h3>🏗️ هدم وتركيب</h3>
+<p>
+إزالة التشطيبات القديمة وتجهيز الموقع وتنفيذ التشطيب الجديد.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+<div class="title">
+<h2>معرض أعمالنا</h2>
+</div>
+
+<div class="grid">
+
+<div class="gallery-card">
+
+<img
+src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+alt="تشطيبات أرضيات ورخام بالرياض"
+loading="lazy">
+
 <div>
-<h3>✔ خدمة جميع أحياء الرياض</h3>
+أعمال الأرضيات والرخام
+</div>
+
+</div>
+
+
+<div class="gallery-card">
+
+<img
+src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=900&q=80"
+alt="تشطيب داخلي فاخر بالرياض"
+loading="lazy">
+
+<div>
+تشطيبات داخلية وديكور
+</div>
+
+</div>
+
+
+<div class="gallery-card">
+
+<img
+src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80"
+alt="تشطيب منزل وفلل بالرياض"
+loading="lazy">
+
+<div>
+تشطيب فلل ومنازل
+</div>
+
+</div>
+
+
+<div class="gallery-card">
+
+<img
+src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80"
+alt="أعمال ديكور وتشطيبات"
+loading="lazy">
+
+<div>
+أعمال الدهانات والديكور
 </div>
 
 </div>
@@ -257,3 +591,96 @@ onclick="return gtag_report_conversion('https://wa.me/966566223639');">
 </div>
 
 </section>
+
+
+<!-- EXPERIENCE -->
+
+<section class="experience">
+
+<h2>خبرة روسية وأوروبية في التشطيبات</h2>
+
+<p>
+خبرة عملية طويلة في مجال البناء والتشطيبات، تشمل أعمال البلاط والرخام
+والجرانيت والدرج والباركيه واللياسة والدهانات وغيرها من أعمال التشطيب.
+كما تشمل خبرة عمل في روسيا وفنلندا والسويد في مجال البناء والتشطيبات.
+</p>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="title">
+<h2>اطلب عرض سعر</h2>
+</div>
+
+<p>
+للاستفسار عن أعمال التشطيبات أو الترميم أو طلب معاينة، اتصل بنا مباشرة.
+</p>
+
+<a class="contact-number" href="tel:+966566223639">
+0566223639
+</a>
+
+<div class="buttons">
+
+<a class="btn call" href="tel:+966566223639">
+📞 اتصال مباشر
+</a>
+
+<a class="btn whatsapp"
+href="https://wa.me/966566223639"
+target="_blank">
+💬 تواصل عبر واتساب
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+<strong>محمد حافظ للتشطيبات والديكور</strong>
+</p>
+
+<p>
+تشطيبات • بلاط • بورسلان • رخام • جرانيت • دهانات • ترميمات
+</p>
+
+<p>
+الرياض – المملكة العربية السعودية
+</p>
+
+<p>
+© 2026 جميع الحقوق محفوظة
+</p>
+
+</footer>
+
+
+<!-- FIXED CALL / WHATSAPP -->
+
+<div class="fixed-buttons">
+
+<a
+class="fixed-call"
+href="tel:+966566223639">
+📞 اتصل الآن
+</a>
+
+<a
+class="fixed-whatsapp"
+href="https://wa.me/966566223639"
+target="_blank">
+💬 واتساب
+</a>
+
+</div>
+
+
+</body>
+</html>
